@@ -79,7 +79,7 @@ jobs:
     steps:
       - name: Output Information
         run: |
-          echo "${{needs.deploy.outputs.result}}""
+          echo "${{needs.deploy.outputs.result}}"
   report: 
     needs: [lint, deploy]
     if: failure()
